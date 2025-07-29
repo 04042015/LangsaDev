@@ -5,7 +5,7 @@ import Link from 'next/link';
 import { usePathname } from 'next/navigation';
 import {
   LayoutDashboard,
-  FileTemplate,
+  FileText,
   MessageSquare,
   Settings,
   ChevronLeft,
@@ -26,7 +26,7 @@ export default function AdminSidebar() {
     {
       href: '/admin/templates',
       label: 'Kelola Template',
-      icon: FileTemplate,
+      icon: FileText,
     },
     {
       href: '/admin/orders',
