@@ -2,7 +2,7 @@
 
 import { useState, useEffect } from 'react';
 import { 
-  FileTemplate, 
+  FileText, 
   MessageSquare, 
   TrendingUp, 
   Users, 
@@ -22,7 +22,7 @@ export default function AdminDashboard() {
     {
       title: 'Total Template',
       value: stats.totalTemplates,
-      icon: FileTemplate,
+      icon: FileText,
       color: 'bg-blue-500',
       bgColor: 'bg-blue-50',
       textColor: 'text-blue-600',
