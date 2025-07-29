@@ -176,7 +176,7 @@ export default function AdminDashboard() {
                 className="flex items-center space-x-3 p-3 rounded-lg hover:bg-gray-50 transition-colors group"
               >
                 <div className="w-10 h-10 bg-blue-100 rounded-lg flex items-center justify-center group-hover:bg-blue-200 transition-colors">
-                  <FileTemplate className="text-blue-600" size={20} />
+                  <FileText className="text-blue-600" size={20} />
                 </div>
                 <div>
                   <p className="font-medium text-gray-900">Kelola Template</p>
