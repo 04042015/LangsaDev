@@ -2,22 +2,26 @@ import type { Config } from 'tailwindcss';
 
 const config: Config = {
   content: [
-    './src/**/*.{ts,tsx,js,jsx,mdx}',
+    './src/app/**/*.{js,ts,jsx,tsx}',
+    './src/components/**/*.{js,ts,jsx,tsx}',
   ],
   theme: {
     extend: {
       colors: {
-        coral: '#FF5E5B',
-        primary: '#3B82F6',
-        grayDark: '#1E293B',
-        grayLight: '#F1F5F9',
-        blackSoft: '#2E2E2E',
-      },
-      fontFamily: {
-        inter: ['Inter', 'sans-serif'],
+        primary: {
+          DEFAULT: '#2563eb', // biru
+          dark: '#1e40af',
+          light: '#60a5fa',
+        },
+        secondary: {
+          DEFAULT: '#10b981', // hijau
+          dark: '#047857',
+        },
+        accent: '#f59e0b', // kuning
       },
     },
   },
   plugins: [],
 };
+
 export default config;
