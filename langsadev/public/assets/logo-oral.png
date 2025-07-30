@@ -1,0 +1,9 @@
+import Image from 'next/image';
+
+<Image
+  src="/assets/logo-ld-coral.png"
+  alt="LangsaDev Logo"
+  width={40}
+  height={40}
+  priority
+/>
