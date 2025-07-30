@@ -3,7 +3,12 @@
 import Image from 'next/image';
 import Link from 'next/link';
 
-export default function Logo({ size = 40, withText = false }: { size?: number; withText?: boolean }) {
+type LogoProps = {
+  size?: number;
+  withText?: boolean;
+};
+
+export default function Logo({ size = 40, withText = false }: LogoProps) {
   return (
     <Link href="/" className="flex items-center space-x-2">
       <Image
