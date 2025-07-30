@@ -11,29 +11,29 @@ export default function HomePage() {
   return (
     <div className="bg-white text-gray-800">
       {/* Hero Section */}
-      <section className="bg-gradient-to-br from-indigo-700 via-purple-700 to-fuchsia-600 text-white">
+      <section className="bg-gradient-to-br from-rose-600 via-pink-500 to-rose-400 text-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20 lg:py-28">
           <div className="text-center animate-fade-in">
-            <h1 className="text-4xl sm:text-5xl lg:text-6xl font-extrabold mb-6 leading-tight tracking-tight drop-shadow-xl">
+            <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold mb-6 leading-tight">
               Template Website{' '}
               <span className="bg-gradient-to-r from-yellow-300 to-orange-400 bg-clip-text text-transparent">
                 Siap Pakai
               </span>
             </h1>
-            <p className="text-xl lg:text-2xl text-purple-100 mb-10 max-w-3xl mx-auto drop-shadow-md">
+            <p className="text-xl lg:text-2xl text-rose-100 mb-8 max-w-3xl mx-auto">
               Dapatkan website profesional untuk bisnismu dengan tampilan modern,
               responsif, dan siap pakai — tanpa repot!
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Link
                 href="/templates"
-                className="bg-accent text-white px-8 py-4 rounded-xl font-semibold text-lg hover:bg-yellow-500 transition-all duration-300 shadow-lg"
+                className="bg-yellow-400 text-gray-900 px-8 py-4 rounded-lg font-semibold text-lg hover:bg-yellow-300 transition-colors shadow-md"
               >
                 <span>Lihat Template</span>
               </Link>
               <Link
                 href="/contact"
-                className="border-2 border-white text-white px-8 py-4 rounded-xl font-semibold text-lg hover:bg-white hover:text-indigo-700 transition-all duration-300"
+                className="border-2 border-white text-white px-8 py-4 rounded-lg font-semibold text-lg hover:bg-white hover:text-rose-700 transition-colors"
               >
                 Konsultasi Gratis
               </Link>
@@ -47,7 +47,7 @@ export default function HomePage() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
             <h2 className="text-3xl lg:text-4xl font-bold text-gray-900 mb-4">
-              Mengapa Memilih <span className="text-primary">LangsaDev</span>?
+              Mengapa Memilih <span className="text-rose-600">LangsaDev</span>?
             </h2>
             <p className="text-xl text-gray-600 max-w-2xl mx-auto">
               Kami menyediakan template berkualitas tinggi dengan fitur unggulan
@@ -56,8 +56,8 @@ export default function HomePage() {
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
             <FeatureBox
-              icon={<Zap size={32} className="text-indigo-600" />}
-              bg="bg-indigo-100"
+              icon={<Zap size={32} className="text-orange-500" />}
+              bg="bg-orange-100"
               title="Performa Cepat"
               desc="Template kami dioptimalkan untuk loading kilat & SEO maksimal."
             />
@@ -68,13 +68,13 @@ export default function HomePage() {
               desc="Kode bersih & aman dengan standar best-practice developer."
             />
             <FeatureBox
-              icon={<Users size={32} className="text-pink-600" />}
-              bg="bg-pink-100"
+              icon={<Users size={32} className="text-cyan-600" />}
+              bg="bg-cyan-100"
               title="Support 24/7"
               desc="Tim kami siap bantu kapan saja dengan ramah & responsif."
             />
             <FeatureBox
-              icon={<Star size={32} className="text-yellow-600" />}
+              icon={<Star size={32} className="text-yellow-500" />}
               bg="bg-yellow-100"
               title="Premium Quality"
               desc="Desain elegan dari tim profesional berpengalaman."
@@ -104,7 +104,7 @@ export default function HomePage() {
           <div className="text-center mt-12">
             <Link
               href="/templates"
-              className="bg-primary text-white px-8 py-4 rounded-xl font-semibold text-lg hover:bg-indigo-800 transition-all duration-300 inline-flex items-center space-x-2 shadow-lg"
+              className="bg-rose-600 text-white px-8 py-4 rounded-lg font-semibold text-lg hover:bg-rose-700 transition-colors inline-flex items-center space-x-2"
             >
               <span>Lihat Semua Template</span>
               <ArrowRight size={20} />
@@ -114,18 +114,18 @@ export default function HomePage() {
       </section>
 
       {/* CTA Section */}
-      <section className="bg-gradient-to-r from-indigo-900 via-indigo-800 to-indigo-900 text-white py-20">
+      <section className="bg-gradient-to-r from-rose-900 via-rose-800 to-rose-900 text-white py-20">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <h2 className="text-3xl lg:text-4xl font-bold mb-4 drop-shadow-lg">
+          <h2 className="text-3xl lg:text-4xl font-bold mb-4">
             Siap Memulai Project Anda?
           </h2>
-          <p className="text-xl text-indigo-200 mb-8 max-w-2xl mx-auto">
+          <p className="text-xl text-rose-200 mb-8 max-w-2xl mx-auto">
             Konsultasikan kebutuhanmu & temukan solusi terbaik bersama kami!
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Link
               href="/contact"
-              className="bg-pink-500 text-white px-8 py-4 rounded-xl font-semibold text-lg hover:bg-pink-600 transition-all duration-300 shadow-md"
+              className="bg-pink-500 text-white px-8 py-4 rounded-lg font-semibold text-lg hover:bg-pink-600 transition-colors"
             >
               Hubungi Kami
             </Link>
@@ -133,7 +133,7 @@ export default function HomePage() {
               href="https://wa.me/6281234567890"
               target="_blank"
               rel="noopener noreferrer"
-              className="bg-green-500 text-white px-8 py-4 rounded-xl font-semibold text-lg hover:bg-green-600 transition-all duration-300 shadow-md"
+              className="bg-green-500 text-white px-8 py-4 rounded-lg font-semibold text-lg hover:bg-green-600 transition-colors"
             >
               WhatsApp
             </a>
@@ -144,7 +144,6 @@ export default function HomePage() {
   );
 }
 
-// Komponen untuk fitur kotak
 function FeatureBox({
   icon,
   bg,
@@ -165,4 +164,4 @@ function FeatureBox({
       <p className="text-gray-600">{desc}</p>
     </div>
   );
-                  }
+}
