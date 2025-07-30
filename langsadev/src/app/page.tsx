@@ -143,25 +143,24 @@ className="border-2 border-white text-white px-8 py-4 rounded-lg font-semibold t
 ); }
 
 // Komponen untuk fitur kotak 
-function FeatureBox({ 
+function FeatureBox({
   icon,
   bg,
   title,
-  desc, 
-}: { 
-  icon: React.ReactNode; 
-  bg: string; 
-  title: string; 
-  desc: string; 
-}) { 
-  return ( 
-    <div className="text-center p-6 bg-white rounded-xl shadow-md hover:shadow-lg transition"> 
-      <div className={w-16 h-16 ${bg} rounded-full flex items-center justify-center mx-auto mb-4}>
-      {icon}
-    </div> 
-    <h3 className="text-xl font-semibold text-gray-900 mb-2">{title}</h3> 
-    <p className="text-gray-600">{desc}</p>
-    </div> 
-    ); 
+  desc,
+}: {
+  icon: React.ReactNode;
+  bg: string;
+  title: string;
+  desc: string;
+}) {
+  return (
+    <div className="text-center p-6 bg-white rounded-xl shadow-md hover:shadow-lg transition">
+      <div className={`w-16 h-16 ${bg} rounded-full flex items-center justify-center mx-auto mb-4`}>
+        {icon}
+      </div>
+      <h3 className="text-xl font-semibold text-gray-900 mb-2">{title}</h3>
+      <p className="text-gray-600">{desc}</p>
+    </div>
+  );
 }
-
