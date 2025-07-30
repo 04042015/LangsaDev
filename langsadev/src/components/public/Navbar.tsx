@@ -17,10 +17,13 @@ export default function Navbar() {
 
   return (
     <nav className="bg-white shadow-lg sticky top-0 z-50">
-      
-<div className="flex items-center">
-  <Logo withText size={32} />
-</div>
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="flex justify-between h-16 items-center">
+          
+          {/* Logo */}
+          <div className="flex items-center">
+            <Logo withText size={32} />
+          </div>
 
           {/* Desktop Navigation */}
           <div className="hidden md:flex items-center space-x-8">
@@ -79,4 +82,4 @@ export default function Navbar() {
       </div>
     </nav>
   );
-}
+          }
