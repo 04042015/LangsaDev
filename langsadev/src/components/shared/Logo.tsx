@@ -2,15 +2,17 @@
 
 import Image from 'next/image';
 import Link from 'next/link';
+import clsx from 'clsx';
 
 type LogoProps = {
   size?: number;
   withText?: boolean;
+  className?: string;
 };
 
-export default function Logo({ size = 40, withText = false }: LogoProps) {
+export default function Logo({ size = 40, withText = false, className = '' }: LogoProps) {
   return (
-    <Link href="/" className="flex items-center space-x-2">
+    <Link href="/" className={clsx('flex items-center space-x-2', className)}>
       <Image
         src="/assets/logo-ld-coral.png"
         alt="LangsaDev Logo"
