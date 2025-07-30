@@ -10,6 +10,19 @@ export default function HomePage() {
 
   return (
     <div className="bg-white text-gray-800">
+      {/* Test warna Tailwind Custom */}
+      <div className="p-4 space-y-4">
+        <div className="bg-primary text-white p-4 rounded-lg text-center">
+          Ini bg-primary
+        </div>
+        <div className="bg-secondary text-white p-4 rounded-lg text-center">
+          Ini bg-secondary
+        </div>
+        <div className="bg-accent text-white p-4 rounded-lg text-center">
+          Ini bg-accent
+        </div>
+      </div>
+
       {/* Hero Section */}
       <section className="bg-gradient-to-br from-rose-600 via-pink-500 to-rose-400 text-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20 lg:py-28">
